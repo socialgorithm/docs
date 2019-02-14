@@ -1,0 +1,10 @@
+{
+    "plugins": [
+      "image-captions",
+      "image-wrapper",
+      "-sharing"
+    ],
+    "description": "This book explains the Socialgorithm Architecture.",
+    "author": "Socialgorithm",
+    "language": "en"
+  }
