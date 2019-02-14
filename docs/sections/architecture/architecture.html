@@ -199,6 +199,25 @@
                                 
                                 <h1 id="architecture">Architecture</h1>
 <figure id="fig1.2.1"><div class="image-wrapper"><img src="architecture.png" alt="Socialgorithm Architecture"></div><figcaption>Figure: Socialgorithm Architecture</figcaption></figure>
+<h1 id="writing-games">Writing Games</h1>
+<p>You can either use a Socialgorithm provided Game Server Library, or write your own that conforms to our interface and that the Tournament Server will talk to.</p>
+<p>All game servers conform to the following interface, providing the ability to send updates on game progress to players or the tournament server</p>
+<pre><code>interface GameServer {
+    bindings: GameServerBindings,
+    sendPlayerMessage: (player: string, payload: any) =&gt; void;
+    sendGameMessage: (type: MessageType, payload: any) =&gt; void;
+}
+</code></pre><p>All games must implement game server bindings, listening to events from the Tournament Server/Game Server</p>
+<pre><code>interface GameServerBindings {
+    startGame: (options: GameOptions) =&gt; void;
+    onPlayerMessage: (player: Player, payload: any) =&gt; void;
+}
+</code></pre><h2 id="javascript">JavaScript</h2>
+<p>See <a href="https://github.com/socialgorithm/game-server-js" target="_blank">JavaScript Game Server Library</a></p>
+<h2 id="javajvm-languages">Java/JVM languages</h2>
+<p>Coming soon!</p>
+<h2 id="other-languages">Other languages</h2>
+<p>Coming soon!</p>
 
                                 
                                 </section>
@@ -238,7 +257,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.2","depth":1,"next":{"title":"#Socialgorithm","level":"2.1","depth":1,"url":"https://socialgorithm.org","ref":"https://socialgorithm.org","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/architecture/architecture.html#fig1.2.1","level":"1.2","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":1,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.2.1"}]},"language":"en","gitbook":"*","description":"This book explains the Socialgorithm Architecture."},"file":{"path":"sections/architecture/architecture.md","mtime":"2019-02-14T16:51:13.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-14T17:05:07.707Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.2","depth":1,"next":{"title":"#Socialgorithm","level":"2.1","depth":1,"url":"https://socialgorithm.org","ref":"https://socialgorithm.org","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/architecture/architecture.html#fig1.2.1","level":"1.2","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":1,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.2.1"}]},"language":"en","gitbook":"*","description":"This book explains the Socialgorithm Architecture."},"file":{"path":"sections/architecture/architecture.md","mtime":"2019-02-14T17:38:42.857Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-14T17:39:22.389Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
