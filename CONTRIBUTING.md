@@ -10,6 +10,10 @@ Edit the .md files in this repository (mostly in the `sections` directory).
 
 To edit the left navigation, edit `SUMMARY.md`.
 
+## Editing Images
+
+Edit images by going to https://www.draw.io and loading the XML file of the same name. When done save the XML file **AND the image file.**
+
 # Publishing changes
 
 Changes are picked up by Github Pages from the `docs/` folder. A git pre-push hook is available (`hooks/pre-push`) that will build the project, and you can enable it by running:
