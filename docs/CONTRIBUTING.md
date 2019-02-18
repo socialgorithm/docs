@@ -12,7 +12,7 @@ To edit the left navigation, edit `SUMMARY.md`.
 
 ## Editing Images
 
-Edit images by going to https://www.draw.io and loading the XML file of the same name. When done save the XML file **AND the image file.**
+Edit images by going to https://www.draw.io and loading the PNG file of the same name. When done save the XML file **AND the image file.**
 
 # Publishing changes
 
