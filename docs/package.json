@@ -4,7 +4,7 @@
     "build": "gitbook build . docs",
     "build:pdf": "gitbook pdf ./ ./dist/SG.pdf",
     "build:ebook": "gitbook epub ./ ./dist/SG.epub && gitbook mobi ./ ./dist/SG.mobi",
-    "git-pre-push": "npm run build"
+    "git-pre-commit": "npm run build"
   },
   "devDependencies": {
     "@zeit/git-hooks": "^0.1.4",
