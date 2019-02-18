@@ -1,10 +1,10 @@
 {
-    "plugins": [
-      "image-captions",
-      "image-wrapper",
-      "-sharing"
-    ],
-    "description": "This book explains the Socialgorithm Architecture.",
-    "author": "Socialgorithm",
-    "language": "en"
-  }
+  "plugins": [
+    "image-captions",
+    "image-wrapper",
+    "-sharing"
+  ],
+  "description": "Explains how to run Socialgorithm competitions or write games for it.",
+  "author": "Socialgorithm",
+  "language": "en"
+}
