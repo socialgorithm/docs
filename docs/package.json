@@ -3,9 +3,11 @@
     "start": "gitbook serve",
     "build": "gitbook build . docs",
     "build:pdf": "gitbook pdf ./ ./dist/SG.pdf",
-    "build:ebook": "gitbook epub ./ ./dist/SG.epub && gitbook mobi ./ ./dist/SG.mobi"
+    "build:ebook": "gitbook epub ./ ./dist/SG.epub && gitbook mobi ./ ./dist/SG.mobi",
+    "git-pre-push": "npm run build"
   },
   "devDependencies": {
+    "@zeit/git-hooks": "^0.1.4",
     "gitbook-cli": "^2.3.2",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
