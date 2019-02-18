@@ -13,6 +13,8 @@
 #   <local ref> <local sha1> <remote ref> <remote sha1>
 #
 
+echo "Running git pre-push hook"
+
 remote="$1"
 url="$2"
 
