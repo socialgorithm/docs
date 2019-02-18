@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Architecture · GitBook</title>
+        <title>Writing Games · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -64,8 +64,6 @@
 
     
     
-    <link rel="prev" href="../../" />
-    
 
     </head>
     <body>
@@ -106,9 +104,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="architecture.html">
+        <li class="chapter " data-level="1.2" data-path="../architecture/architecture.html">
             
-                <a href="architecture.html">
+                <a href="../architecture/architecture.html">
             
                     
                     Architecture
@@ -133,9 +131,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../games/writing-games.html">
+        <li class="chapter active" data-level="1.3.1" data-path="writing-games.html">
             
-                <a href="../games/writing-games.html">
+                <a href="writing-games.html">
             
                     
                     Writing Games
@@ -214,7 +212,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Architecture</a>
+        <a href="../.." >Writing Games</a>
     </h1>
 </div>
 
@@ -229,18 +227,47 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="architecture">Architecture</h1>
-<p>Coding challenges/games in Socialgorithm consist of:</p>
+                                <h1 id="writing-games">Writing Games</h1>
+<p>We provide Game Server Libraries that setup a socket server and provide entrypoints for your game logic. These libraries integrate with the rest of the Socialgorithm stack, and allow you to abstract communication logic and focus on writing your game logic/engine.</p>
+<h2 id="available-game-server-libraries">Available Game Server Libraries</h2>
+<p>Please see the repositories for information on how to integrate your games:</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Repository</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript / TypeScript</td>
+<td><a href="http://github.com/socialgorithm/game-server-js" target="_blank">http://github.com/socialgorithm/game-server-js</a></td>
+<td><a href="https://github.com/socialgorithm/tic-tac-toe" target="_blank">https://github.com/socialgorithm/tic-tac-toe</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td>Coming Soon</td>
+<td></td>
+</tr>
+<tr>
+<td>Python</td>
+<td>Coming Soon</td>
+</tr>
+</tbody>
+</table>
+<h2 id="roll-your-own">Roll your own</h2>
+<p>If the server libraries do not meet your expectations, you can always roll your own. To communicate with the SG Tournament Server, you need to ensure that it reacts accordingly to the following socket messages:</p>
+<p>Input from Tournament Server (implement/react to these):</p>
 <ul>
-<li>Players: Code/logic written by competition participants to compete against others (e.g. a Battleships player)</li>
-<li>Game Engine/Server: Runs games between players, processing moves/actions from Players, ensuring consistency and signalling game updates/end.</li>
-<li>Tournament Server: Matches up players, communicates with the game server to start games or read results, and ranks players in the tournament leaderboard. </li>
+<li><code>startGame</code>: This event is sent to initialize the game</li>
+<li><code>playerMessage</code>: This event is sent when a player has sent a message (e.g. made a move)</li>
 </ul>
-<p>All communication occurs over Websockets. Socialgorithm provides a number of libraries that abstract Websocket client/server setup and communication, so that competition players can focus on writing the best algorithms, and game writers can focus on writing fun games.</p>
-<p>This architecture diagram shows how each piece integrates together:</p>
-<figure id="fig1.2.1"><div class="image-wrapper"><img src="architecture.png" alt="Socialgorithm Architecture"></div><figcaption>Figure: Socialgorithm Architecture</figcaption></figure>
-<h1 id="games-and-players">Games and Players</h1>
-<p>If you are interested in hosting a competition, you can either use one of our existing games, or integrate your own. See our<a href="https://socialgorithm.org/workshops/" target="_blank">available games</a> or the documentation for how to <a href="../games/writing-games.html">write your own game</a>.</p>
+<p>Output to Tournament Server (call these at appropriate times):</p>
+<ul>
+<li><code>playerMessage</code>: Use this event to communicate directly with players (e.g. to report an opponent move/ask for a move)</li>
+<li><code>gameMessage</code>: Use this event to broadcast game state (e.g. stats update/game end)</li>
+</ul>
 
                                 
                                 </section>
@@ -268,10 +295,6 @@
 
             
                 
-                <a href="../../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
                 
             
         
@@ -280,7 +303,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.2","depth":1,"next":{"title":"Games","level":"1.3","depth":1,"ref":"","articles":[{"title":"Writing Games","level":"1.3.1","depth":2,"path":"sections/games/writing-games.md","ref":"sections/games/writing-games.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/architecture/architecture.html#fig1.2.1","level":"1.2","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":1,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.2.1"}]},"language":"en","gitbook":"*","description":"This book explains the Socialgorithm Architecture."},"file":{"path":"sections/architecture/architecture.md","mtime":"2019-02-18T10:44:31.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-18T10:55:06.257Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Writing Games","level":"1.3.1","depth":2,"next":{"title":"#Socialgorithm","level":"2.1","depth":1,"url":"https://socialgorithm.org","ref":"https://socialgorithm.org","articles":[]},"previous":{"title":"Games","level":"1.3","depth":1,"ref":"","articles":[{"title":"Writing Games","level":"1.3.1","depth":2,"path":"sections/games/writing-games.md","ref":"sections/games/writing-games.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/architecture/architecture.html#fig1.2.1","level":"1.2","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":1,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.2.1"}]},"language":"en","gitbook":"*","description":"This book explains the Socialgorithm Architecture."},"file":{"path":"sections/games/writing-games.md","mtime":"2019-02-18T10:17:07.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-18T10:55:06.257Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
