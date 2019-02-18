@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@zeit/git-hooks@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@zeit/git-hooks/-/git-hooks-0.1.4.tgz#70583db5dd69726a62c7963520e67f2c3a33cc5f"
+  integrity sha512-NvgZgoYJ/n27Ly7lKxKttMIKSS8P4dr1EURgTmqihHVdTAEqVtkAYPT5XykZIR+GKz8WRGyEQVJekwSgvjYQLg==
+
 JSONStream@~1.3.1:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"
