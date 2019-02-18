@@ -1,38 +1,17 @@
 # Architecture
 
+Coding challenges/games in Socialgorithm consist of:
+
+* Players: Code/logic written by competition participants to compete against others (e.g. a Battleships player)
+* Game Engine/Server: Runs games between players, processing moves/actions from Players, ensuring consistency and signalling game updates/end.
+* Tournament Server: Matches up players, communicates with the game server to start games or read results, and ranks players in the tournament leaderboard. 
+
+All communication occurs over Websockets. Socialgorithm provides a number of libraries that abstract Websocket client/server setup and communication, so that competition players can focus on writing the best algorithms, and game writers can focus on writing fun games.
+
+This architecture diagram shows how each piece integrates together:
+
 ![Socialgorithm Architecture](architecture.png)
 
-# Writing Games
+# Games and Players
 
-You can either use a Socialgorithm provided Game Server Library, or write your own that conforms to our interface and that the Tournament Server will talk to.
-
-All game servers conform to the following interface, providing the ability to send updates on game progress to players or the tournament server
-
-```
-interface GameServer {
-    bindings: GameServerBindings,
-    sendPlayerMessage: (player: string, payload: any) => void;
-    sendGameMessage: (type: MessageType, payload: any) => void;
-}
-```
-
-All games must implement game server bindings, listening to events from the Tournament Server/Game Server
-
-```
-interface GameServerBindings {
-    startGame: (options: GameOptions) => void;
-    onPlayerMessage: (player: Player, payload: any) => void;
-}
-```
-
-## JavaScript
-
-See [JavaScript Game Server Library](https://github.com/socialgorithm/game-server-js)
-
-## Java/JVM languages
-
-Coming soon!
-
-## Other languages
-
-Coming soon!
+If you are interested in hosting a competition, you can either use one of our existing games, or integrate your own. See our[available games](https://socialgorithm.org/workshops/) or the documentation for how to [write your own game](/sections/games/writing-games.md).
