@@ -14,4 +14,4 @@ This architecture diagram shows how each piece integrates together:
 
 # Games and Players
 
-If you are interested in hosting a competition, you can either use one of our existing games, or integrate your own. See our[available games](https://socialgorithm.org/workshops/) or the documentation for how to [write your own game](/sections/games/writing-games.md).
+If you are interested in hosting a competition, you can either use one of our existing games, or integrate your own. See our [available games](https://socialgorithm.org/workshops/) or the documentation for how to [write your own game](/sections/games/writing-games.md).
