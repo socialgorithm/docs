@@ -23,12 +23,27 @@ These are the minimum requirements to participate in your workshop:
    1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-starter`  
      e.g. `git clone git@github.com:socialgorithm/tic-tac-toe-starter`
 
+## On The Day
+
+### Create a Test Tournament Lobby
+
+You will first need to create a test lobby on our tournament server. You will use this lobby to test your algorithm/player implementation(s).
+
+To create a lobby:
+
+1. Go to https://play.socialgorithm.org/
+1. Click "Create Match"
+    1. If disconnected, connect to https://sg-tournament.herokuapp.com
+1. Click "Get Started"
+
+This is your lobby. You will shortly use the command in the "Connect Your Player" section to test your player.
+
 ## Continue: 
 
 Pick the game you are playing today:
 
-* [Tic-Tac-Toe](sections/workshop/tic-tac-toe/start.md)
-* [Ultimate Tic-Tac-Toe](sections/workshop/ultimate-tic-tac-toe/start.md)
+* [Tic-Tac-Toe](./tic-tac-toe/start.md)
+* [Ultimate Tic-Tac-Toe](./ultimate-tic-tac-toe/start.md)
 
 -----
 
@@ -36,5 +51,5 @@ Pick the game you are playing today:
 
 #### Permission Denied / EACCES
 
-If you see an **EACCES** error when you try to install a package globally: See the [npm docs on permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+If you see an **EACCES** error when you try to install an NPM package globally: See the [npm docs on permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
