@@ -12,17 +12,14 @@ To edit the left navigation, edit `SUMMARY.md`.
 
 ## Editing Images
 
-Edit images by going to https://www.draw.io and loading the PNG file of the same name. When done save the XML file **AND the image file.**
+Edit images by going to https://www.draw.io and loading the PNG file. When done, remember to **EXPORT as PNG and "Include a copy of my image"**.
 
 # Publishing changes
 
-Changes are picked up by Github Pages from the `docs/` folder. A git pre-push hook is available (`hooks/pre-push`) that will build the project, and you can enable it by running:
+Documentation is published to Github Pages from the `docs/` folder. You **must** run
 
 ```
-$ git config core-hooksPath hooks
+$ yarn build
 ```
 
-This should build the docs folder, so all you need to do is:
-
-1. Edit the files
-2. `git push`
+before you push your changes. This will build the docs folder.
