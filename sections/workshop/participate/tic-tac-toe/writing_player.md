@@ -29,13 +29,15 @@ uabc --host "https://sg-tournament.herokuapp.com" --lobby "{YOUR_LOBBY_NAME}" --
 
 If all goes well, your player should show up in the list of available players. 
 
-You now need another player to compete against. Open a new terminal window and run the above command again (changing the player name). You can now start the game (you may have to click "Play Next Match").
+You now need another player to compete against. Open a new terminal window and run the above command again (changing the player name). 
+
+You can now start the game (you may have to click "Play Next Match" in the top right corner).
 
 ### Improving the Starter Player
 
-So now you've got the random player working, let's improve it!
+So now you've got the starter player working, let's improve it! In the starter pack, find the `players` directory. 
 
-In the starter pack, find the `players` directory. So far, you have been running the `myPlayer.js` implementation. This is a copy of the `random.js` file, so as you improve `myPlayer`, you can ensure you are getting better results versus `random`.
+So far, you have been running the `myPlayer.js` implementation. This is a copy of the `random.js` file, so as you improve `myPlayer`, you can ensure you are getting better results versus `random`.
 
 Let's dig into the `myPlayer.js` file to see what it is actually doing. There are three functions of interest to us:
 
@@ -68,4 +70,4 @@ uabc --host "https://sg-tournament.herokuapp.com" --lobby "{YOUR_LOBBY_NAME}" --
 
 To compete, simply replace the name of your test lobby with the lobby name given to you by the Socialgorithm mentors running the workshop.
 
-Good luck!
+***Good luck!***

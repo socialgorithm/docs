@@ -1,0 +1,409 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Writing A Player · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Socialgorithm">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ultimate-tic-tac-toe/start.html" />
+    
+    
+    <link rel="prev" href="start.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../architecture/architecture.html">
+            
+                <a href="../../../architecture/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Workshops</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../participate.html">
+            
+                <a href="../participate.html">
+            
+                    
+                    Participate
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1.1" data-path="writing_player.html">
+            
+                <a href="writing_player.html">
+            
+                    
+                    Writing A Player
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../ultimate-tic-tac-toe/start.html">
+            
+                <a href="../ultimate-tic-tac-toe/start.html">
+            
+                    
+                    Ultimate Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developers</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../games/writing-games.html">
+            
+                <a href="../../../games/writing-games.html">
+            
+                    
+                    Writing Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">About us</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://socialgorithm.org">
+            
+                    
+                    #Socialgorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://socialgorithm.org/team">
+            
+                    
+                    Get Involved!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Writing A Player</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tic-tac-toe-writing-a-player">Tic Tac Toe: Writing a Player</h1>
+<p>You will now write an algorithm (player) that can play Tic Tac Toe!</p>
+<p>Your player needs to:</p>
+<ol>
+<li>Play a valid move.</li>
+<li>Receive and record an opponent&apos;s move.</li>
+</ol>
+<blockquote>
+<p>Now is a good time to ensure you have the <code>tic-tac-toe-starter</code> repository available (see <a href="../participate.html">The Welcome Page</a>), and open it in your code editor.</p>
+</blockquote>
+<h2 id="the-starter-player">The Starter Player</h2>
+<p>The starter pack provides a player that plays Tic Tac Toe by picking valid moves at random. Not the best strategy. You will soon improve it, but let&apos;s ensure the starter player works on your machine first.</p>
+<h3 id="running-the-starter-player">Running the Starter Player</h3>
+<p>Run the following command in the <code>tic-tac-toe-starter</code> directory to install required dependencies:</p>
+<pre><code>npm install
+</code></pre><p>Now run <code>uabc</code> to connect your player to the lobby you created earlier (replacing <code>YOUR_LOBBY_NAME</code> and <code>YOUR_PLAYER_NAME</code> with appropriate values):</p>
+<pre><code>uabc --host &quot;https://sg-tournament.herokuapp.com&quot; --lobby &quot;{YOUR_LOBBY_NAME}&quot; --token &quot;{YOUR_PLAYER_NAME}&quot; -f &quot;node run_player.js myPlayer&quot;
+</code></pre><p>If all goes well, your player should show up in the list of available players. </p>
+<p>You now need another player to compete against. Open a new terminal window and run the above command again (changing the player name). </p>
+<p>You can now start the game (you may have to click &quot;Play Next Match&quot; in the top right corner).</p>
+<h3 id="improving-the-starter-player">Improving the Starter Player</h3>
+<p>So now you&apos;ve got the starter player working, let&apos;s improve it! In the starter pack, find the <code>players</code> directory. </p>
+<p>So far, you have been running the <code>myPlayer.js</code> implementation. This is a copy of the <code>random.js</code> file, so as you improve <code>myPlayer</code>, you can ensure you are getting better results versus <code>random</code>.</p>
+<p>Let&apos;s dig into the <code>myPlayer.js</code> file to see what it is actually doing. There are three functions of interest to us:</p>
+<ol>
+<li>LINE 17: <code>init: () =&gt; void</code>
+Function that is called when a new game is about to begin (the player will normally reset their board state at this time).</li>
+<li>LINE 21: <code>getMove: () =&gt; Move</code><br>Function that is called every time it is your move.</li>
+<li>LINE 28: <code>onOpponentMove: (move: Move) =&gt; Move</code><br>Function that is called every time the opponent makes a move.</li>
+</ol>
+<p>If you read the <code>getMove</code> function, you will see that it calls the <code>getRandomValidMove()</code> function. As the name of the function indicates, this function returns a random valid move, which is then returned to the server.</p>
+<p>So, to stop playing randomly, replace the call to the <code>getRandomValidMove()</code> function with a function of your own. It might help you to first understand what that function is doing, copy it and then make your modifications. You can also refer to the <a href="https://socialgorithm.org/ultimate-ttt-js/classes/_subboard_.subboard.html" target="_blank">SubBoard API</a> to see what functions are available on the <code>SubBoard</code>/<code>game</code> object.</p>
+<p>Every time you use the <code>addMyMove</code> or <code>addOpponentMove</code> functions, remember that the board object is copied, so (as is done in the <code>getMyMove</code> function), you must update the existing <code>game</code> variable with the return value of <code>addMyMove</code>/<code>addOpponentMove</code>, i.e.:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">this</span>.game = <span class="hljs-keyword">this</span>.game.addMyMove(myMove);
+</code></pre>
+<h3 id="testing-your-improvements">Testing your improvements</h3>
+<p>To test your improvements, run the <code>myPlayer</code> implementation (or any other player you have created), against the <code>random</code> implementation. You can connect the random implementation to your lobby by running:</p>
+<pre><code>uabc --host &quot;https://sg-tournament.herokuapp.com&quot; --lobby &quot;{YOUR_LOBBY_NAME}&quot; --token &quot;random&quot; -f &quot;node run_player.js random&quot;
+</code></pre><h3 id="competing">Competing</h3>
+<p>To compete, simply replace the name of your test lobby with the lobby name given to you by the Socialgorithm mentors running the workshop.</p>
+<p><strong><em>Good luck!</em></strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="start.html" class="navigation navigation-prev " aria-label="Previous page: Tic-Tac-Toe">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ultimate-tic-tac-toe/start.html" class="navigation navigation-next " aria-label="Next page: Ultimate Tic-Tac-Toe">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Writing A Player","level":"2.1.1.1","depth":3,"next":{"title":"Ultimate Tic-Tac-Toe","level":"2.1.2","depth":2,"path":"sections/workshop/participate/ultimate-tic-tac-toe/start.md","ref":"sections/workshop/participate/ultimate-tic-tac-toe/start.md","articles":[]},"previous":{"title":"Tic-Tac-Toe","level":"2.1.1","depth":2,"path":"sections/workshop/participate/tic-tac-toe/start.md","ref":"sections/workshop/participate/tic-tac-toe/start.md","articles":[{"title":"Writing A Player","level":"2.1.1.1","depth":3,"path":"sections/workshop/participate/tic-tac-toe/writing_player.md","ref":"sections/workshop/participate/tic-tac-toe/writing_player.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/architecture/architecture.html#fig1.2.1","level":"1.2","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":1,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"sections/workshop/participate/tic-tac-toe/start.html#fig2.1.1.1","level":"2.1.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":2,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"2.1.1.1"},{"backlink":"sections/workshop/participate/ultimate-tic-tac-toe/start.html#fig2.1.2.1","level":"2.1.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":3,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"2.1.2.1"},{"backlink":"sections/workshop/participate/ultimate-tic-tac-toe/start.html#fig2.1.2.2","level":"2.1.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":4,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"2.1.2.2"},{"backlink":"sections/workshop/participate/ultimate-tic-tac-toe/start.html#fig2.1.2.3","level":"2.1.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":5,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"2.1.2.3"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/workshop/participate/tic-tac-toe/writing_player.md","mtime":"2019-03-07T16:56:17.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-07T16:56:43.593Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
