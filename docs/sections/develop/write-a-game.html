@@ -1,0 +1,440 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Write A Game · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Socialgorithm">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="architecture.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../participate/">
+            
+                <a href="../participate/">
+            
+                    
+                    Participate
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../participate/tic-tac-toe.html">
+            
+                <a href="../participate/tic-tac-toe.html">
+            
+                    
+                    Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../participate/ultimate-tic-tac-toe/start.html">
+            
+                <a href="../participate/ultimate-tic-tac-toe/start.html">
+            
+                    
+                    Ultimate Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Develop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="write-a-game.html">
+            
+                <a href="write-a-game.html">
+            
+                    
+                    Write A Game
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">About us</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://socialgorithm.org">
+            
+                    
+                    #Socialgorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://socialgorithm.org/team">
+            
+                    
+                    Get Involved!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Write A Game</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="writing-a-game">Writing A Game</h1>
+<p>These are the parts involved in writing a game/challenge:</p>
+<ul>
+<li>Write the Game Logic</li>
+<li>Connect the Game Logic to an existing Game Server Library / Roll your own</li>
+<li>Write a Sample Player</li>
+<li>Connect the Tournament Server/Players to the Game Server to test</li>
+<li>Write the Game UI</li>
+</ul>
+<h2 id="write-the-game-logic">Write the Game Logic</h2>
+<p>You can write the game logic in any language you prefer, but it may be quicker for you to write in a language that is already supported by us. We provide Game Server Libraries that setup a socket server and provide entrypoints for your game logic. These libraries integrate with the rest of the Socialgorithm stack, allowing you to abstract communication logic and focus on writing your game logic/engine.</p>
+<p>You should strive to have unit/end-to-end tests for your game logic.</p>
+<h2 id="game-server-libraries">Game Server Libraries</h2>
+<h3 id="existingavailable-game-server-libraries">Existing/Available Game Server Libraries</h3>
+<p>Please see the repositories for information on how to integrate your games:</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Repository</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript / TypeScript</td>
+<td><a href="https://github.com/socialgorithm/game-server-js" target="_blank">https://github.com/socialgorithm/game-server-js</a></td>
+<td><a href="https://github.com/socialgorithm/tic-tac-toe" target="_blank">https://github.com/socialgorithm/tic-tac-toe</a></td>
+</tr>
+<tr>
+<td>Java / JVM</td>
+<td><a href="https://github.com/socialgorithm/game-server-java" target="_blank">https://github.com/socialgorithm/game-server-java</a></td>
+<td>Coming Soon</td>
+</tr>
+</tbody>
+</table>
+<p>We are open to contributions in other languages, please see below on how to write your own Game Server library. </p>
+<h3 id="roll-your-own">Roll your own</h3>
+<p>If the server libraries do not meet your expectations, you can always roll your own. To communicate with the SG Tournament Server/other games consumers, a Game Server must send the socket events expected by the Tournament Server and execute functionality based on the events sent by the Tournament Server. This is described below:</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Required?</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GAME_INFO</code></td>
+<td>Y</td>
+<td>On every new connection to the Game Server, it must emit a <code>GAME_INFO</code> event so consumers know the type of the game server</td>
+<td></td>
+</tr>
+<tr>
+<td><code>START_GAME</code></td>
+<td>Y</td>
+<td>The Tournament Server sends this when the game is starting, the Game Server should initialize a game. Any future communication on this connection is regarding this game only</td>
+<td></td>
+</tr>
+<tr>
+<td><code>GAME__PLAYER</code></td>
+<td>N</td>
+<td><em> The Tournament Server sends this when a player has sent a message to the game <br></em> The Game Server can send this to communicate with a player</td>
+<td></td>
+</tr>
+<tr>
+<td><code>GAME_UPDATED</code></td>
+<td>N</td>
+<td>The Game Server can send this when it wants to communicate game updates to spectactors</td>
+<td></td>
+</tr>
+<tr>
+<td><code>GAME_ENDED</code></td>
+<td>Y</td>
+<td>The Game Server must send this when the game has ended. The Tournament Server will then close the game connection.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="write-a-sample-player">Write a Sample Player</h2>
+<p>Writing a sample player will not only let you test your game logic, but will later serve as a starting point for participants in your competition. Again, you should have independent tests of your player to ensure it works as expected before integrating it.</p>
+<p>We provide UABC (Ultimate Algorithm Battle Client), a command-line application that abstracts communication over the network by connecting to the specified Tournament Server, executing your player file, and acting as a bridge between the STDIN/STDOUT of the file and the websocket port of the Tournament Server. In practice, this means that your player only needs to listen for data/moves on STDIN and output data/moves on STDOUT.</p>
+<p>See the <a href="https://github.com/socialgorithm/uabc" target="_blank">UABC Repository</a> for instructions on how to install/use it with your sample player.</p>
+<h2 id="test-with-the-tournament-server-and-web-ui">Test with the Tournament Server and Web UI</h2>
+<p>The Tournament Server helps to proxy messages between players and game servers, and once you have tested your game logic to ensure it works, you can start to test against sample players (over the network).</p>
+<p>To install the Tournament Server, check out its <a href="https://github.com/socialgorithm/tournament-server/" target="_blank">repository and README</a>. Follow the instructions to install it and connect it to your game server.</p>
+<p>You can then use our <a href="https://github.com/socialgorithm/play.socialgorithm.org" target="_blank">Web UI</a> to start matches between your sample players to test that the entire game works as expected.</p>
+<h2 id="game-ui">Game UI</h2>
+<p>While we provide a UI to display Tournaments and their statistics, each game can have its own UI that will render statistics or game boards (or anything really). To write the game UI, you will need to provide a ReactJS component that will accept game statistics and render accordingly (e.g. receive player moves and render a game board). </p>
+<p>The format of the game statistics is left up to your game and its renderer. Your game, when connected to the Tournament Server, will emit <code>GAME_ENDED</code> messages, and optionally <code>GAME_UPDATED</code> messages. The tournament server will pass these messages on to spectators, including the Web UI, which will contain your React component for rendering the game board.</p>
+<p>So, to get started with writing the Game UI, follow the instructions on the <a href="https://github.com/socialgorithm/play.socialgorithm.org" target="_blank">Web UI repository</a> to obtain the source code and to read on how to add your UI.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="architecture.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Architecture">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Write A Game","level":"1.3.2","depth":2,"next":{"title":"#Socialgorithm","level":"2.1","depth":1,"url":"https://socialgorithm.org","ref":"https://socialgorithm.org","articles":[]},"previous":{"title":"Architecture","level":"1.3.1","depth":2,"path":"sections/develop/architecture.md","ref":"sections/develop/architecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/develop/architecture.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":5,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.3.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/develop/write-a-game.md","mtime":"2019-06-11T08:09:13.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-11T08:24:08.411Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
