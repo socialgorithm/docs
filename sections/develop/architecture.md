@@ -1,5 +1,7 @@
 # Architecture
 
+![Socialgorithm Architecture](architecture.png)
+
 The Socialgorithm platform is made up of:
 
 * Players: Code/AI written by competition participants to compete against others (e.g. a Battleships player)
@@ -10,11 +12,3 @@ The Socialgorithm platform is made up of:
 All communication occurs over Websockets. 
 
 Socialgorithm provides a number of libraries that abstract Websocket client/server setup and communication, so that competition players can focus on writing the best algorithms, and game writers can focus on writing fun games.
-
-This architecture diagram shows how each piece integrates together:
-
-![Socialgorithm Architecture](architecture.png)
-
-# Games and Players
-
-If you are interested in hosting a competition, you can either use one of our existing games, or integrate your own. See our [available games](https://socialgorithm.org/workshops/) or the documentation for how to [write your own game](./games.md).

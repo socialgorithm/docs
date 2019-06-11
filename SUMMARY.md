@@ -1,13 +1,11 @@
 # Summary
 
-* [Architecture](sections/architecture/architecture.md)
-  * [Games](sections/architecture/games.md)
-
-## Workshops
-* [Participate](sections/workshop/participate/participate.md)
-  * [Tic-Tac-Toe](sections/workshop/participate/tic-tac-toe/start.md)
-    * [Writing A Player](sections/workshop/participate/tic-tac-toe/writing_player.md)
-  * [Ultimate Tic-Tac-Toe](sections/workshop/participate/ultimate-tic-tac-toe/start.md)
+* [Participate](sections/participate/index.md)
+  * [Tic-Tac-Toe](sections/participate/tic-tac-toe.md)
+  * [Ultimate Tic-Tac-Toe](sections/participate/ultimate-tic-tac-toe/start.md)
+* [Develop](sections/develop/index.md)
+  * [Architecture](sections/develop/architecture.md)
+  * [Write A Game](sections/develop/write-a-game.md)
 
 --------
 
