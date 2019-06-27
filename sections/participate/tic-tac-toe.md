@@ -22,7 +22,7 @@ Your player needs to:
 1. Play a valid move.
 1. Receive and record an opponent's move.
 
-> Now is a good time to ensure you have the `tic-tac-toe-starter` repository available (see [The Welcome Page](../participate.md)), and open it in your code editor.
+> Now is a good time to ensure you have the `tic-tac-toe-player` repository available (see [The Welcome Page](../participate.md)), and open it in your code editor.
 
 ## The Starter Player
 
@@ -30,7 +30,7 @@ The starter pack provides a player that plays Tic Tac Toe by picking valid moves
 
 ### Running the Starter Player
 
-Run the following command in the `tic-tac-toe-starter` directory to install required dependencies:
+Run the following command in the `tic-tac-toe-player` directory to install required dependencies:
 
 ```
 npm install

@@ -20,8 +20,8 @@ These are the minimum requirements to participate in your workshop:
     ```
 1. On Windows:  
    1. Install UABC: `npm install -g @socialgorithm/uabc`
-   1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-starter`  
-     e.g. `git clone git@github.com:socialgorithm/tic-tac-toe-starter`
+   1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-player`  
+     e.g. `git clone git@github.com:socialgorithm/tic-tac-toe-player`
 
 ## On The Day
 
