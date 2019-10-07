@@ -8,5 +8,9 @@ This will give you a brief overview of the Socialgorithm competition infrastruct
 
 Use the navigation on the left to reach sections of interest directly, or start with why you're here:
 
-* [I am a competition/hackathon participant](sections/participate/index.md)
-* [I am developing the Socialgorithm platform (e.g. writing a game)](sections/develop/index.md)
+## Who are you?
+
+* [Competition/hackathon participant](sections/participate/index.md)
+* [Organiser for an event](sections/organise/index.md)
+* [Mentor on an event](sections/mentor/index.md)
+* [Developer contributing](sections/develop/index.md) to the Socialgorithm platform (e.g. writing a game)

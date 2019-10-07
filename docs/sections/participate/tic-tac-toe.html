@@ -21,6 +21,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -63,7 +67,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ultimate-tic-tac-toe/start.html" />
+    <link rel="next" href="ultimate-tic-tac-toe/" />
     
     
     <link rel="prev" href="./" />
@@ -135,9 +139,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="ultimate-tic-tac-toe/start.html">
+        <li class="chapter " data-level="1.2.2" data-path="ultimate-tic-tac-toe/">
             
-                <a href="ultimate-tic-tac-toe/start.html">
+                <a href="ultimate-tic-tac-toe/">
             
                     
                     Ultimate Tic-Tac-Toe
@@ -153,12 +157,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../develop/">
+        <li class="chapter " data-level="1.3" data-path="../mentor/">
+            
+                <a href="../mentor/">
+            
+                    
+                    Mentor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../organise/">
+            
+                <a href="../organise/">
+            
+                    
+                    Organise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../develop/">
             
                 <a href="../develop/">
             
                     
-                    Develop
+                    Develop/Contribute
             
                 </a>
             
@@ -167,7 +197,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../develop/architecture.html">
+        <li class="chapter " data-level="1.5.1" data-path="../develop/architecture.html">
             
                 <a href="../develop/architecture.html">
             
@@ -180,7 +210,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../develop/write-a-game.html">
+        <li class="chapter " data-level="1.5.2" data-path="../develop/write-a-game.html">
             
                 <a href="../develop/write-a-game.html">
             
@@ -276,18 +306,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="tic-tac-toe">Tic Tac Toe</h1>
-<h2 id="about">About</h2>
+                                <h1 id="about">About</h1>
 <figure id="fig1.2.1.1"><div class="image-wrapper"><img src="tic-tac-toe.gif" alt="Tic Tac Toe Animation"></div><figcaption>Figure: Tic Tac Toe Animation</figcaption></figure>
 <p>We&apos;ve all probably played a game of Tic Tac Toe / Noughts and Crosses, this classic game is quite simple to play, but it is an interesting challenge to write an algorithm that can play (intelligently) for you.</p>
-<h2 id="rules">Rules</h2>
+<h1 id="rules">Rules</h1>
 <ol>
 <li>You play on a 3x3 game board.</li>
 <li>You and your opponent will play one after another.</li>
 <li>You need to get 3 cells in a row, in any direction, to win.</li>
 <li>If you take too long to play (usually 100ms), you lose.</li>
 </ol>
-<h2 id="writing-your-own-player">Writing Your Own Player</h2>
+<h1 id="writing-your-own-player">Writing Your Own Player</h1>
 <p>You will now write an algorithm (player) that can play Tic Tac Toe!</p>
 <p>Your player needs to:</p>
 <ol>
@@ -297,9 +326,9 @@
 <blockquote>
 <p>Now is a good time to ensure you have the <code>tic-tac-toe-player</code> repository available (see <a href="../participate.md">The Welcome Page</a>), and open it in your code editor.</p>
 </blockquote>
-<h2 id="the-starter-player">The Starter Player</h2>
+<h1 id="the-starter-player">The Starter Player</h1>
 <p>The starter pack provides a player that plays Tic Tac Toe by picking valid moves at random. Not the best strategy. You will soon improve it, but let&apos;s ensure the starter player works on your machine first.</p>
-<h3 id="running-the-starter-player">Running the Starter Player</h3>
+<h2 id="running-the-starter-player">Running the Starter Player</h2>
 <p>Run the following command in the <code>tic-tac-toe-player</code> directory to install required dependencies:</p>
 <pre><code>npm install
 </code></pre><p>Now run <code>uabc</code> to connect your player to the lobby you created earlier (replacing <code>YOUR_LOBBY_NAME</code> and <code>YOUR_PLAYER_NAME</code> with appropriate values):</p>
@@ -307,7 +336,7 @@
 </code></pre><p>If all goes well, your player should show up in the list of available players. </p>
 <p>You now need another player to compete against. Open a new terminal window and run the above command again (changing the player name). </p>
 <p>You can now start the game (you may have to click &quot;Play Next Match&quot; in the top right corner).</p>
-<h3 id="improving-the-starter-player">Improving the Starter Player</h3>
+<h2 id="improving-the-starter-player">Improving the Starter Player</h2>
 <p>So now you&apos;ve got the starter player working, let&apos;s improve it! In the starter pack, find the <code>players</code> directory. </p>
 <p>So far, you have been running the <code>myPlayer.js</code> implementation. This is a copy of the <code>random.js</code> file, so as you improve <code>myPlayer</code>, you can ensure you are getting better results versus <code>random</code>.</p>
 <p>Let&apos;s dig into the <code>myPlayer.js</code> file to see what it is actually doing. There are three functions of interest to us:</p>
@@ -322,10 +351,10 @@ Function that is called when a new game is about to begin (the player will norma
 <p>Every time you use the <code>addMyMove</code> or <code>addOpponentMove</code> functions, remember that the board object is copied, so (as is done in the <code>getMyMove</code> function), you must update the existing <code>game</code> variable with the return value of <code>addMyMove</code>/<code>addOpponentMove</code>, i.e.:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">this</span>.game = <span class="hljs-keyword">this</span>.game.addMyMove(myMove);
 </code></pre>
-<h3 id="testing-your-improvements">Testing your improvements</h3>
+<h2 id="testing-your-improvements">Testing your improvements</h2>
 <p>To test your improvements, run the <code>myPlayer</code> implementation (or any other player you have created), against the <code>random</code> implementation. You can connect the random implementation to your lobby by running:</p>
 <pre><code>uabc --host &quot;https://sg-tournament.herokuapp.com&quot; --lobby &quot;{YOUR_LOBBY_NAME}&quot; --token &quot;random&quot; -f &quot;node run_player.js random&quot;
-</code></pre><h3 id="competing">Competing</h3>
+</code></pre><h2 id="competing">Competing</h2>
 <p>To compete, simply replace the name of your test lobby with the lobby name given to you by the Socialgorithm mentors running the workshop.</p>
 <p><strong><em>Good luck!</em></strong></p>
 
@@ -360,7 +389,7 @@ Function that is called when a new game is about to begin (the player will norma
                 </a>
                 
                 
-                <a href="ultimate-tic-tac-toe/start.html" class="navigation navigation-next " aria-label="Next page: Ultimate Tic-Tac-Toe">
+                <a href="ultimate-tic-tac-toe/" class="navigation navigation-next " aria-label="Next page: Ultimate Tic-Tac-Toe">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -371,7 +400,7 @@ Function that is called when a new game is about to begin (the player will norma
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"next":{"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"path":"sections/participate/ultimate-tic-tac-toe/start.md","ref":"sections/participate/ultimate-tic-tac-toe/start.md","articles":[]},"previous":{"title":"Participate","level":"1.2","depth":1,"path":"sections/participate/index.md","ref":"sections/participate/index.md","articles":[{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},{"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"path":"sections/participate/ultimate-tic-tac-toe/start.md","ref":"sections/participate/ultimate-tic-tac-toe/start.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/develop/architecture.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":5,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.3.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/tic-tac-toe.md","mtime":"2019-10-07T15:05:45.659Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-07T15:12:29.557Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"showToc":true,"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"next":{"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"path":"sections/participate/ultimate-tic-tac-toe/index.md","ref":"sections/participate/ultimate-tic-tac-toe/index.md","articles":[]},"previous":{"title":"Participate","level":"1.2","depth":1,"path":"sections/participate/index.md","ref":"sections/participate/index.md","articles":[{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},{"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"path":"sections/participate/ultimate-tic-tac-toe/index.md","ref":"sections/participate/ultimate-tic-tac-toe/index.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":5,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/tic-tac-toe.md","mtime":"2019-10-07T15:31:26.614Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-07T15:35:03.006Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -382,6 +411,14 @@ Function that is called when a new game is about to begin (the player will norma
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
         
     
         

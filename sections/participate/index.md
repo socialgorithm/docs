@@ -1,12 +1,14 @@
-# Welcome to your Socialgorithm Workshop!
+---
+showToc: true
+---
+
+# Before You Arrive
 
 You will shortly start your workshop, but we need to make sure you're prepared.
 
 **Please read everything carefully!**
 
 > Socialgorithm is a community of software developers that want to keep coding fun by designing workshops, competitions and challenges for students and companies. If this sounds interesting to you, [join us](https://socialgorithm.org/team/)!
-
-## Before You Arrive
 
 These are the minimum requirements to participate in your workshop:
 
@@ -23,9 +25,9 @@ These are the minimum requirements to participate in your workshop:
    1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-player`  
      e.g. `git clone git@github.com:socialgorithm/tic-tac-toe-player`
 
-## On The Day
+# On The Day
 
-### Create a Test Tournament Lobby
+## Create a Test Tournament Lobby
 
 You will first need to create a test lobby on our tournament server. You will use this lobby to test your algorithm/player implementation(s).
 
@@ -38,7 +40,7 @@ To create a lobby:
 
 This is your lobby. You will shortly use the command in the "Connect Your Player" section to test your player.
 
-## Continue: 
+# Continue: 
 
 Pick the game you are playing today:
 
@@ -47,9 +49,9 @@ Pick the game you are playing today:
 
 -----
 
-## Troubleshooting
+# Troubleshooting
 
-#### Permission Denied / EACCES
+### Permission Denied / EACCES
 
 If you see an **EACCES** error when you try to install an NPM package globally: See the [npm docs on permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 

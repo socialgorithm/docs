@@ -21,6 +21,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -63,7 +67,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../develop/" />
+    <link rel="next" href="../../mentor/" />
     
     
     <link rel="prev" href="../tic-tac-toe.html" />
@@ -135,9 +139,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="start.html">
+        <li class="chapter active" data-level="1.2.2" data-path="./">
             
-                <a href="start.html">
+                <a href="./">
             
                     
                     Ultimate Tic-Tac-Toe
@@ -153,12 +157,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../../develop/">
+        <li class="chapter " data-level="1.3" data-path="../../mentor/">
+            
+                <a href="../../mentor/">
+            
+                    
+                    Mentor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../organise/">
+            
+                <a href="../../organise/">
+            
+                    
+                    Organise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../develop/">
             
                 <a href="../../develop/">
             
                     
-                    Develop
+                    Develop/Contribute
             
                 </a>
             
@@ -167,7 +197,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../../develop/architecture.html">
+        <li class="chapter " data-level="1.5.1" data-path="../../develop/architecture.html">
             
                 <a href="../../develop/architecture.html">
             
@@ -180,7 +210,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../../develop/write-a-game.html">
+        <li class="chapter " data-level="1.5.2" data-path="../../develop/write-a-game.html">
             
                 <a href="../../develop/write-a-game.html">
             
@@ -276,14 +306,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ultimate-tic-tac-toe">Ultimate Tic Tac Toe</h1>
-<h2 id="about">About</h2>
+                                <h1 id="about">About</h1>
 <figure id="fig1.2.2.1"><div class="image-wrapper"><img src="../../../assets/uttt.gif" alt="Ultimate Tic Tac Toe board, with an animation for some rounds"></div><figcaption>Figure: Ultimate Tic Tac Toe board, with an animation for some rounds</figcaption></figure>
 <p>This is the board for an <strong>Ultimate Tic Tac Toe</strong> game, it&apos;s essentially a collection of nine small <em>regular</em> Tic Tac Toe games.</p>
 <p>The first player can play in any cell of any of the small boards. The coordinates of the <strong>move in the small board</strong> determine which <em>board</em> the next player has to use to play.</p>
 <p>On each turn, the valid small board is <strong>highlighted in yellow</strong>. Each player&apos;s move is displayed in <em>blue/red</em>.</p>
 <p>You&apos;ll be playing on the big board, but in order to <em>&quot;win&quot;</em> each cell, you have to win the <strong>game within that cell</strong>.</p>
-<h2 id="rules">Rules</h2>
+<h1 id="rules">Rules</h1>
 <ol>
 <li>You only play on the small boards.</li>
 <li>The first player can play on any cell of any small board.</li>
@@ -291,15 +320,15 @@
 <li>If you are <em>sent</em> to a board that has been won already, you must play on any other board. <em>(Some people play with variations of this rule, but we believe this makes for the most interesting algorithms)</em></li>
 <li>To win the game you must have 3 in a row in the big board in any direction.</li>
 </ol>
-<h3 id="example">Example</h3>
+<h2 id="example">Example</h2>
 <p>If this is the first move of the game:</p>
 <figure id="fig1.2.2.2"><div class="image-wrapper"><img src="../../../assets/3-first-move.jpg" alt="Example of a first move"></div><figcaption>Figure: Example of a first move</figcaption></figure>
 <p>Then the other player has to play on the top right board:</p>
 <figure id="fig1.2.2.3"><div class="image-wrapper"><img src="../../../assets/4-second-move.jpg" alt="Board where the next player has to play in"></div><figcaption>Figure: Board where the next player has to play in</figcaption></figure>
-<h2 id="playing">Playing</h2>
+<h1 id="playing">Playing</h1>
 <p>The game may seem simple at first, but the fact that you get to decide where your opponent plays next means that you&apos;ll have to look ahead several turns to decide what the best move is.</p>
 <p>You should start by playing <strong>at least once on paper</strong> with a friend, to get an idea of how the game goes. Sometimes giving up one of the smaller games is necessary to win the big one!</p>
-<h2 id="continue-writing-your-own-player">Continue: <a href="writing_player.md">Writing Your Own Player</a>!</h2>
+<h1 id="continue-writing-your-own-player">Continue: <a href="writing_player.md">Writing Your Own Player</a>!</h1>
 
                                 
                                 </section>
@@ -332,7 +361,7 @@
                 </a>
                 
                 
-                <a href="../../develop/" class="navigation navigation-next " aria-label="Next page: Develop">
+                <a href="../../mentor/" class="navigation navigation-next " aria-label="Next page: Mentor">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -343,7 +372,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"next":{"title":"Develop","level":"1.3","depth":1,"path":"sections/develop/index.md","ref":"sections/develop/index.md","articles":[{"title":"Architecture","level":"1.3.1","depth":2,"path":"sections/develop/architecture.md","ref":"sections/develop/architecture.md","articles":[]},{"title":"Write A Game","level":"1.3.2","depth":2,"path":"sections/develop/write-a-game.md","ref":"sections/develop/write-a-game.md","articles":[]}]},"previous":{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe/start.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/develop/architecture.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":5,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.3.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/ultimate-tic-tac-toe/start.md","mtime":"2019-10-07T15:05:45.666Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-07T15:12:29.557Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"showToc":true,"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"next":{"title":"Mentor","level":"1.3","depth":1,"path":"sections/mentor/index.md","ref":"sections/mentor/index.md","articles":[]},"previous":{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe/index.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":5,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/ultimate-tic-tac-toe/index.md","mtime":"2019-10-07T15:34:34.059Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-07T15:35:03.006Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -354,6 +383,14 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
         
     
         
