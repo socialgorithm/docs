@@ -2,9 +2,16 @@
   "plugins": [
     "image-captions",
     "image-wrapper",
-    "-sharing"
+    "-sharing",
+    "edit-link"
   ],
   "description": "Explains how to run Socialgorithm competitions or write games for it.",
   "author": "Socialgorithm",
-  "language": "en"
+  "language": "en",
+  "pluginsConfig": {
+    "edit-link": {
+        "base": "https://github.com/socialgorithm/docs/edit/master/",
+        "label": "Edit This Page"
+    }
+}
 }
