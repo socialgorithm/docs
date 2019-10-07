@@ -1,22 +1,26 @@
+---
+showToc: true
+---
+
 # Writing A Game
 
 These are the parts involved in writing a game/challenge:
 
-* Write the Game Logic
-* Connect the Game Logic to an existing Game Server Library / Roll your own
-* Write a Sample Player
+* Write the **Game Logic**
+* Connect the Game Logic to an existing **Game Server Library** / Roll your own
+* Write a **Sample Player**
 * Connect the Tournament Server/Players to the Game Server to test
-* Write the Game UI
+* Write the **Game UI**
 
-## Write the Game Logic
+## Writing the Game Logic
 
-You can write the game logic in any language you prefer, but it may be quicker for you to write in a language that is already supported by us. We provide Game Server Libraries that setup a socket server and provide entrypoints for your game logic. These libraries integrate with the rest of the Socialgorithm stack, allowing you to abstract communication logic and focus on writing your game logic/engine.
+You can write the game logic in any language you prefer, but it may be quicker for you to write in a language that is already supported by us (see the table below). We provide Game Server Libraries that setup a socket server and provide entrypoints for your game logic. These libraries integrate with the rest of the Socialgorithm stack, allowing you to abstract communication logic and focus on writing your game logic/engine.
 
 You should strive to have unit/end-to-end tests for your game logic.
 
 ## Game Server Libraries
 
-### Existing/Available Game Server Libraries
+### Existing Game Server Libraries
 
 Please see the repositories for information on how to integrate your games:
 
@@ -29,6 +33,8 @@ We are open to contributions in other languages, please see below on how to writ
 
 ### Roll your own
 
+The best way to do this is to port an existing one, so pick one from the table above and go to town!
+
 If the server libraries do not meet your expectations, you can always roll your own. To communicate with the SG Tournament Server/other games consumers, a Game Server must send the socket events expected by the Tournament Server and execute functionality based on the events sent by the Tournament Server. This is described below:
 
 | Event | Required? | Description | Format |
@@ -39,11 +45,11 @@ If the server libraries do not meet your expectations, you can always roll your 
 | `GAME_UPDATED` | N |  The Game Server can send this when it wants to communicate game updates to spectactors | |
 | `GAME_ENDED` | Y | The Game Server must send this when the game has ended. The Tournament Server will then close the game connection. | | 
 
-## Write a Sample Player
+## Writing a Sample Player
 
 Writing a sample player will not only let you test your game logic, but will later serve as a starting point for participants in your competition. Again, you should have independent tests of your player to ensure it works as expected before integrating it.
 
-We provide UABC (Ultimate Algorithm Battle Client), a command-line application that abstracts communication over the network by connecting to the specified Tournament Server, executing your player file, and acting as a bridge between the STDIN/STDOUT of the file and the websocket port of the Tournament Server. In practice, this means that your player only needs to listen for data/moves on STDIN and output data/moves on STDOUT.
+We provide **UABC** (Ultimate Algorithm Battle Client), a command-line application that abstracts communication over the network by connecting to the specified Tournament Server, executing your player file, and acting as a bridge between the STDIN/STDOUT of the file and the websocket port of the Tournament Server. In practice, this means that your player only needs to listen for data/moves on STDIN and output data/moves on STDOUT.
 
 See the [UABC Repository](https://github.com/socialgorithm/uabc) for instructions on how to install/use it with your sample player.
 
