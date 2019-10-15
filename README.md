@@ -10,7 +10,7 @@ Use the navigation on the left to reach sections of interest directly, or start 
 
 ## Who are you?
 
-* [Competition/hackathon participant](sections/participate)
-* [Organiser for an event](sections/organise)
-* [Mentor on an event](sections/mentor)
-* [Developer contributing](sections/develop) to the Socialgorithm platform (e.g. writing a game)
+* [Competition/hackathon participant](sections/participate/README.md)
+* [Organiser for an event](sections/organise/README.md)
+* [Mentor on an event](sections/mentor/README.md)
+* [Developer contributing](sections/develop/README.md) to the Socialgorithm platform (e.g. writing a game)
