@@ -24,7 +24,7 @@ Your player needs to:
 1. Play a valid move.
 1. Receive and record an opponent's move.
 
-> Now is a good time to ensure you have the `tic-tac-toe-player` repository available (see [The Welcome Page](../participate.md)), and open it in your code editor.
+> Now is a good time to ensure you have the `tic-tac-toe-player` repository available (see [The Welcome Page](./index.md)), and open it in your code editor.
 
 # The Starter Player
 
