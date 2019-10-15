@@ -1,3 +1,9 @@
+---
+showToc: true
+---
+
+# Ideas
+
 There are endless ways in which you can write the logic for your player, which is part of the fun! But here we're going to explore two ideas.
 
 The first is easier to implement, while the second is harder but should choose the best move every time.
@@ -52,4 +58,4 @@ Keep in mind that for the competition there is a timeout per move, so make sure 
 
 ------
 
-You should now be ready to learn [how to test your player locally](analyse-games.md)!
+You should now be ready to learn [how to test your player locally](./analyse-games.md)!

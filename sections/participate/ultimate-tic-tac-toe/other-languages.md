@@ -49,6 +49,6 @@ You'll need a data structure to store the current game state, whose turn it is, 
 
 If you end up writing a game engine in any other language, please [get in touch](https://socialgorithm.org/#contact) so we can add it to the list!
 
-> We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
+> We have prepared [some ideas](./ideas.md) on how to write the AI for your player that may help you out!
 
-## Continue: [Running Locally](analyse_games.md)
+## Continue: [Running Locally](./analyse_games.md)

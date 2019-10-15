@@ -90,7 +90,7 @@ the [API Reference](https://ultimate-ttt-py.readthedocs.io/en/latest/) for all t
 Some folks prefer to view the source of the game engine directly rather than using the API reference. You can
 find all the sources in the `engine/` directory.
 
-## Continue: [Analyse Your Games](analyse-games.md)
+## Continue: [Analyse Your Games](./analyse-games.md)
 
 --------
 

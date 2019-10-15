@@ -1,3 +1,7 @@
+---
+showToc: true
+---
+
 # Getting Started: Javascript
 
 > If you have a Github account: Fork the project and clone it locally, so you can share your amazing implementation with the world!
@@ -7,14 +11,14 @@
 In a terminal window, navigate to the folder where you want to store this project (`cd <folder-name>`), and run:
 
 ```console
-git clone https://github.com/socialgorithm/uttt-player-js.git
+git clone https://github.com/socialgorithm/ultimate-ttt-player-js.git
 ```
 
-After this, you'll have a folder named `uttt-player-js`, which contains the player.
+After this, you'll have a folder named `ultimate-ttt-player-js`, which contains the player.
 
 ## Set up
 
-After you've cloned the repository, cd into the project folder (`cd uttt-player-js`), and run the following command to install the dependencies:
+After you've cloned the repository, cd into the project folder (`cd ultimate-ttt-player-js`), and run the following command to install the dependencies:
 
 ```bash
 npm install
@@ -31,9 +35,9 @@ Inside the `src` folder you'll find three implementations:
 
 It's interesting to look at each of these to see how they implement the logic and learn about it before starting to make changes.
 
-> We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
+> We have prepared [some ideas](./ideas.md) on how to write the AI for your player that may help you out!
 
-## Continue: [Running Locally](analyse-games.md)
+## Continue: [Running Locally](./analyse-games.md)
 
 --------
 

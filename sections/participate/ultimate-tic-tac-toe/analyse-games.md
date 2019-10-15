@@ -1,3 +1,7 @@
+---
+showToc: true
+---
+
 # Iterating Locally
 
 > If you haven't installed the client utility `uabc` please go through the ["Before You Arrive" section](../README.md).
@@ -15,7 +19,7 @@ For an explanation of all the options run `uabc -h`.
 
 ### ProTip! Analyse Your Games
 
-Logging to a **file** is very useful because you can then *[upload your log file](https://uttt.socialgorithm.org/replay)* to see the games and analyze the moves one by one.
+Logging to a **file** is very useful because you can then *[upload your log file](https://play.socialgorithm.org/replay)* to see the games and analyze the moves one by one.
 
 For example, you can run `uabc -p --log --verbose -f "python3 run_player.py"`, and use your logfile to see: 
 
@@ -25,5 +29,5 @@ Seriously, this is going to be *very* useful, **try it**!
 
 ## Continue:
 
-### [Ideas for Your Player](ideas.md)
-### [Competing with Humans](competing.md)
+### [Ideas for Your Player](./ideas.md)
+### [Competing with Humans](./competing.md)
