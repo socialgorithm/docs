@@ -2,6 +2,9 @@
 
 If you haven't already, familiarise yourself with our [architecture](../develop/architecture.md)
 
+You will need to setup atleast one game server, and the tournament server. We suggest you get this setup way 
+in advance so that you can identify any potential server and inter-server connection issues.
+
 ## Game Server(s)
 
 We have the following official game server projects available for you to use, please see their READMEs for information on 
