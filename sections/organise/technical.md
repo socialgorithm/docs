@@ -8,7 +8,7 @@ in advance so that you can identify any potential server and inter-server connec
 ## Game Server(s)
 
 We have the following official game server projects available for you to use, please see their READMEs for information on 
-how to depoy them.
+how to deploy them.
 
 | Game | GitHub Project | License |
 |------|----------------|---------|
