@@ -12,9 +12,9 @@ how to deploy them.
 
 | Game | GitHub Project | License |
 |------|----------------|---------|
-| Ultimate Tic Tac Toe | https://github.com/socialgorithm/ultimate-ttt | MIT |
-| Tic Tac Toe | https://github.com/socialgorithm/tic-tac-toe | AGPL-3.0 |
 | Battleships | https://github.com/morganstanley/battleships | AGPL-3.0 |
+| Tic Tac Toe | https://github.com/socialgorithm/tic-tac-toe | AGPL-3.0 |
+| Ultimate Tic Tac Toe | https://github.com/socialgorithm/ultimate-ttt | MIT |
 
 ## Tournament Server
 
