@@ -12,18 +12,15 @@ You will shortly start your workshop, but we need to make sure you're prepared.
 
 These are the minimum requirements to participate in your workshop:
 
-1. Have a **code editor**. Try [Visual Studio Code](https://code.visualstudio.com/).
+1. Have a code editor. Try [Visual Studio Code](https://code.visualstudio.com/).
 1. Install [Git](https://git-scm.com/downloads)
-1. Install [NodeJS >7](https://nodejs.org/en/download/current/)
-1. On Linux/MacOS:  
-    Run our setup script:
-    ```bash
-    bash <(curl -s https://raw.githubusercontent.com/socialgorithm/setup/master/player-setup.sh)
-    ```
-1. On Windows:  
-   1. Install UABC: `npm install -g @socialgorithm/uabc`
-   1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-player`  
-     e.g. `git clone git@github.com:socialgorithm/tic-tac-toe-player`
+1. Install [NodeJS >=16](https://nodejs.org/en/download/current/)
+1. Ensure you can execute the UABC (client) binary, this will help you connect your player to the server:
+   * Run `npx @socialgorithm/uabc@latest`
+1. Download the player/algorithm starter: `git clone git@github.com:socialgorithm/${GAME}-player`, where game is the name of the game. Some players:
+   * `git clone git@github.com:socialgorithm/tic-tac-toe-player`
+   * `git clone git@github.com:socialgorithm/ultimate-ttt-player-js`
+   * `git clone git@github.com:morganstanley/battleships-player-js`
 
 # On The Day
 
@@ -34,8 +31,8 @@ You will first need to create a test lobby on our tournament server. You will us
 To create a lobby:
 
 1. Go to https://play.socialgorithm.org/
-1. Click "Create Match"
-    1. If disconnected, connect to https://sg-tournament.herokuapp.com
+1. Click "Create/Join Tournaments"
+    * If disconnected, connect to https://sg-tournament.herokuapp.com OR whatever server your organisers specify.
 1. Click "Get Started"
 
 This is your lobby. You will shortly use the command in the "Connect Your Player" section to test your player.
