@@ -79,6 +79,19 @@ As you can see, the `get_my_move` method is the one you need to edit, it returns
 
 To keep things simple, start off with editing the `players/random.py` file.
 
+## Other players
+There are two other players included in the code: FirstAvailable and Defensive. You can pass their names as a command line parameter to `run_player.py` to use them. For example:
+`uabc -p -f "python3 run_player.py Defensive"`.
+
+The Defensive player has code to check for winnable positions, which you might find useful when implementing your own player.
+
+The relevant functions are:
+* `get_my_move`: first it tries to find a winning or defensive position in all the boards that are legal to play, if there is none, it works like FirstAvailable (this logic is similar to Random but it picks the first item from the list of valid sub-boards and positions instead of using `random.choice`.
+* `get_move_for_board`: finds winning and defensive moves in a single sub-board.
+* `get_closeable_positions`: finds winning moves for a specified player. get_move_for_board uses this for itself and the enemy to find winning and defensive moves respectively. The function works by checking for winning moves in the three rows, the three columns and the two diagonals, then filtering out those that have no winning move.
+* `_column`, `_columns`, `_major_diagonal`, `_minor_diagonal`: these return a single column, all the columns, and the two diagonals from a sub-board. get_closeable_positions uses these as helper functions.
+* `get_winning_position`: finds a winning position on a single line. If the specified player has one less fields filled in than the length of the line, the remaining field is the winning move as long as it is empty. In any other case there is no winning move.
+
 ## Game Engine
 
 There is a game engine provided that keeps track of the state of the game and does a lot of the heavy lifting
