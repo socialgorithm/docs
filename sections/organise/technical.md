@@ -24,7 +24,7 @@ Run the following command to start the tournament server:
 npx @socialgorithm/tournament-server --port 8000 --game <game-server-address>
 ``` 
 
-See [the source repository for more information](https://github.com/socialgorithm/tournament-server/)
+See [the source repository for more information](https://github.com/socialgorithm/tournament/)
 
 ## Connectivity Options
 
