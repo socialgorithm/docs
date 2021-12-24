@@ -41,8 +41,9 @@ This is your lobby. You will shortly use the command in the "Connect Your Player
 
 Pick the game you are playing today:
 
+* [Battleships](./battleships.md)
 * [Tic-Tac-Toe](./tic-tac-toe.md)
-* [Ultimate Tic-Tac-Toe](./ultimate-tic-tac-toe)
+* [Ultimate Tic-Tac-Toe](./ultimate-tic-tac-toe.md)
 
 -----
 
