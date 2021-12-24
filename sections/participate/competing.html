@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Participate · GitBook</title>
+        <title>Competing · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tic-tac-toe.html" />
+    <link rel="next" href="../mentor/" />
     
     
-    <link rel="prev" href="../../" />
+    <link rel="prev" href="ideas.html" />
     
 
     </head>
@@ -112,7 +112,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="./">
             
                 <a href="./">
             
@@ -197,7 +197,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="competing.html">
+        <li class="chapter active" data-level="1.2.5" data-path="competing.html">
             
                 <a href="competing.html">
             
@@ -368,7 +368,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Participate</a>
+        <a href="../.." >Competing</a>
     </h1>
 </div>
 
@@ -383,52 +383,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="before-you-arrive">Before You Arrive</h1>
-<p>You will shortly start your workshop, but we need to make sure you&apos;re prepared.</p>
-<p><strong>Please read everything carefully!</strong></p>
-<blockquote>
-<p>Socialgorithm is a community of software developers that want to keep coding fun by designing workshops, competitions and challenges for students and companies. If this sounds interesting to you, <a href="https://socialgorithm.org/team/" target="_blank">join us</a>!</p>
-</blockquote>
-<p>These are the minimum requirements to participate in your workshop:</p>
-<ol>
-<li>Have a code editor. Try <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</li>
-<li>Install <a href="https://git-scm.com/downloads" target="_blank">Git</a></li>
-<li>Install <a href="https://nodejs.org/en/download/current/" target="_blank">NodeJS &gt;=16</a></li>
-<li>Ensure you can execute the UABC (client) binary, this will help you connect your player to the server:<ul>
-<li>Run <code>npx @socialgorithm/uabc@latest</code></li>
+                                <h1 id="competing">Competing</h1>
+<p>So, you&apos;ve written the smartest AI algorithm to play Ultimate Tic Tac Toe? Let&apos;s play against everyone else&apos;s!</p>
+<p>Each client will connect to our server, and they will play 100-1000 games against each other in a tournament style competition, where algorithms will keep advancing towards the final round.</p>
+<p>Please make sure that you have <a href="analyse-games.html">tested your client locally</a> and it works. Ideally it should beat the random implementation every single time consistently.</p>
+<h2 id="connecting-to-the-server">Connecting to the Server</h2>
+<p>Similarly to local testing, you&apos;ll be using the <code>uabc</code> client to connect. Simply run the following command:</p>
+<pre><code>$ uabc --host {server host} --token {your token} -f &quot;node path/to/player.js&quot;
+</code></pre><ul>
+<li>The <code>host</code> will be given to you on the competition day.</li>
+<li>The <code>token</code> can be anything unique that identifies your team. The server won&apos;t allow duplicate tokens.</li>
 </ul>
-</li>
-<li>Download the player/algorithm starter: <code>git clone git@github.com:socialgorithm/${GAME}-player</code>, where game is the name of the game. Some players:<ul>
-<li><code>git clone git@github.com:socialgorithm/tic-tac-toe-player</code></li>
-<li><code>git clone git@github.com:socialgorithm/ultimate-ttt-player-js</code></li>
-<li><code>git clone git@github.com:morganstanley/battleships-player-js</code></li>
-</ul>
-</li>
-</ol>
-<h1 id="on-the-day">On The Day</h1>
-<h2 id="create-a-test-tournament-lobby">Create a Test Tournament Lobby</h2>
-<p>You will first need to create a test lobby on our tournament server. You will use this lobby to test your algorithm/player implementation(s).</p>
-<p>To create a lobby:</p>
-<ol>
-<li>Go to <a href="https://play.socialgorithm.org/" target="_blank">https://play.socialgorithm.org/</a></li>
-<li>Click &quot;Create/Join Tournaments&quot;<ul>
-<li>If disconnected, connect to <a href="https://sg-tournament.herokuapp.com" target="_blank">https://sg-tournament.herokuapp.com</a> OR whatever server your organisers specify.</li>
-</ul>
-</li>
-<li>Click &quot;Get Started&quot;</li>
-</ol>
-<p>This is your lobby. You will shortly use the command in the &quot;Connect Your Player&quot; section to test your player.</p>
-<h1 id="continue">Continue:</h1>
-<p>Pick the game you are playing today:</p>
-<ul>
-<li><a href="battleships.html">Battleships</a></li>
-<li><a href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
-<li><a href="ultimate-tic-tac-toe.html">Ultimate Tic-Tac-Toe</a></li>
-</ul>
-<hr>
-<h1 id="troubleshooting">Troubleshooting</h1>
-<h3 id="permission-denied--eacces">Permission Denied / EACCES</h3>
-<p>If you see an <strong>EACCES</strong> error when you try to install an NPM package globally: See the <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions" target="_blank">npm docs on permissions</a>.</p>
+<p>Once connected just leave the terminal window open, the client will wait for server commands, and play when it&apos;s told to play.</p>
+<p>If your player crashes simply run the command again, if you were in the middle of the game you will have lost it, but you can continue playing after that. The server will handle all these cases (hopefully).</p>
 
                                 
                                 </section>
@@ -456,12 +423,12 @@
 
             
                 
-                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="ideas.html" class="navigation navigation-prev " aria-label="Previous page: Ideas">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="tic-tac-toe.html" class="navigation navigation-next " aria-label="Next page: Tic-Tac-Toe">
+                <a href="../mentor/" class="navigation navigation-next " aria-label="Next page: Mentor">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -472,7 +439,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"showToc":true,"title":"Participate","level":"1.2","depth":1,"next":{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/participate/analyse-games.html#fig1.2.2.1.1","level":"1.2.2.1","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":5,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.2.2.1.1"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":6,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/README.md","mtime":"2021-12-24T02:39:58.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-24T02:40:39.154Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"showToc":true,"title":"Competing","level":"1.2.5","depth":2,"next":{"title":"Mentor","level":"1.3","depth":1,"path":"sections/mentor/README.md","ref":"sections/mentor/README.md","articles":[]},"previous":{"title":"Ideas","level":"1.2.4","depth":2,"path":"sections/participate/ideas.md","ref":"sections/participate/ideas.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/participate/analyse-games.html#fig1.2.2.1.1","level":"1.2.2.1","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":5,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.2.2.1.1"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":6,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/competing.md","mtime":"2021-12-24T02:39:58.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-24T02:40:39.154Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

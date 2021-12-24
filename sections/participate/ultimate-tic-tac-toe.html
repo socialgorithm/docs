@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Ultimate Tic-Tac-Toe · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Socialgorithm">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="analyse-games.html" />
+    
+    
+    <link rel="prev" href="tic-tac-toe.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Participate
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="tic-tac-toe.html">
+            
+                <a href="tic-tac-toe.html">
+            
+                    
+                    Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="ultimate-tic-tac-toe.html">
+            
+                <a href="ultimate-tic-tac-toe.html">
+            
+                    
+                    Ultimate Tic-Tac-Toe
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="analyse-games.html">
+            
+                <a href="analyse-games.html">
+            
+                    
+                    Analyse Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="battleships.html">
+            
+                <a href="battleships.html">
+            
+                    
+                    Battleships
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="ideas.html">
+            
+                <a href="ideas.html">
+            
+                    
+                    Ideas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="competing.html">
+            
+                <a href="competing.html">
+            
+                    
+                    Competing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mentor/">
+            
+                <a href="../mentor/">
+            
+                    
+                    Mentor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../organise/">
+            
+                <a href="../organise/">
+            
+                    
+                    Organise
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../organise/technical.html">
+            
+                <a href="../organise/technical.html">
+            
+                    
+                    Technical Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    Physical Setup
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../develop/">
+            
+                <a href="../develop/">
+            
+                    
+                    Develop/Contribute
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../develop/architecture.html">
+            
+                <a href="../develop/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../develop/write-a-game.html">
+            
+                <a href="../develop/write-a-game.html">
+            
+                    
+                    Write A Game
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">About us</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://socialgorithm.org">
+            
+                    
+                    #Socialgorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Ultimate Tic-Tac-Toe</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="about">About</h1>
+<figure id="fig1.2.2.1"><div class="image-wrapper"><img src="../../assets/uttt.gif" alt="Ultimate Tic Tac Toe board, with an animation for some rounds"></div><figcaption>Figure: Ultimate Tic Tac Toe board, with an animation for some rounds</figcaption></figure>
+<p>This is the board for an <strong>Ultimate Tic Tac Toe</strong> game, it&apos;s essentially a collection of nine small <em>regular</em> Tic Tac Toe games.</p>
+<p>The first player can play in any cell of any of the small boards. The coordinates of the <strong>move in the small board</strong> determine which <em>board</em> the next player has to use to play.</p>
+<p>On each turn, the valid small board is <strong>highlighted in yellow</strong>. Each player&apos;s move is displayed in <em>blue/red</em>.</p>
+<p>You&apos;ll be playing on the big board, but in order to <em>&quot;win&quot;</em> each cell, you have to win the <strong>game within that cell</strong>.</p>
+<h1 id="rules">Rules</h1>
+<ol>
+<li>You only play on the small boards.</li>
+<li>The first player can play on any cell of any small board.</li>
+<li>You must play on the small board that corresponds to the cell the other player played at.</li>
+<li>If you are <em>sent</em> to a board that has been won already, you must play on any other board. <em>(Some people play with variations of this rule, but we believe this makes for the most interesting algorithms)</em></li>
+<li>To win the game you must have 3 in a row in the big board in any direction.</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>If this is the first move of the game:</p>
+<figure id="fig1.2.2.2"><div class="image-wrapper"><img src="../../assets/3-first-move.jpg" alt="Example of a first move"></div><figcaption>Figure: Example of a first move</figcaption></figure>
+<p>Then the other player has to play on the top right board:</p>
+<figure id="fig1.2.2.3"><div class="image-wrapper"><img src="../../assets/4-second-move.jpg" alt="Board where the next player has to play in"></div><figcaption>Figure: Board where the next player has to play in</figcaption></figure>
+<p>The game may seem simple at first, but the fact that you get to decide where your opponent plays next means that you&apos;ll have to look ahead several turns to decide what the best move is.</p>
+<p>You should start by playing <strong>at least once on paper</strong> with a friend, to get an idea of how the game goes. Sometimes giving up one of the smaller games is necessary to win the big one!</p>
+<h1 id="writing-a-player">Writing a Player</h1>
+<p>We&apos;re going to write an algorithm that can play UTTT, exciting right? :)</p>
+<p>At the most basic level, a player needs to be able to calculate a <strong>valid move</strong>, and receive <strong>opponent moves</strong>. Every time it receives a move from its opponent it will run some calculations, and return what it considers to be the optimal move.</p>
+<p>A simple start would be to have a program that does just that:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// pseudo-code example of the most basic methods</span>
+addOpponentMove(board, move) {
+    <span class="hljs-comment">// store his move</span>
+}
+
+addMove(board, move) {
+    <span class="hljs-comment">// store our move</span>
+}
+
+getMove() {
+    <span class="hljs-comment">// calculate a new move</span>
+    <span class="hljs-keyword">return</span> {
+        board: ...,
+        move: ...
+    };
+}
+</code></pre>
+<h2 id="starters">Starters</h2>
+<p>Starter packs provide a basic implementation for that play at random, so you can focus on improving the logic that picks the moves.</p>
+<p>In a terminal window, navigate to the folder where you want to store this project (<code>cd &lt;folder-name&gt;</code>), and run in the language of your choice:</p>
+<blockquote>
+<p>If you have a Github account: Fork the project and clone it locally, so you can share your amazing implementation with the world!</p>
+</blockquote>
+<h3 id="javascript">JavaScript</h3>
+<pre><code class="lang-console">git clone https://github.com/socialgorithm/ultimate-ttt-player-js.git
+cd ultimate-ttt-player-js
+npm install # install dependencies
+</code></pre>
+<h3 id="python">Python</h3>
+<pre><code class="lang-console">git clone https://github.com/socialgorithm/ultimate-ttt-py.git
+cd ultimate-ttt-py
+</code></pre>
+<h2 id="run-the-random-player">Run the Random player</h2>
+<p>The starter project comes with a player that plays moves at random. You can ensure everything works as it
+should by running this player against the <code>uabc</code> random player:</p>
+<h1 id="javascript">JavaScript</h1>
+<p>Inside the <code>src</code> folder you&apos;ll find three implementations:</p>
+<ul>
+<li><code>defensive/logic.js</code> - is a good start, as it already provides some minimal logic to compete.</li>
+<li><code>firstAvailable/logic.js</code> - selects the first available valid move, whatever that is.</li>
+<li><code>random/logic.juabc@latest -p -f &quot;python3 run_player.py&quot;s</code> - selects any valid move at random.</li>
+</ul>
+<p><code>@socialgorithm/uabc@latest -p -f &quot;python3 run_player.py&quot;</code></p>
+<h1 id="python">Python</h1>
+<p>The <code>player.js</code> file does the stdin/stdout work, and you shouldn&apos;t edit it. It requires the file <code>src/defensive/logic.js</code>, which is the one you could start with.</p>
+<p>It&apos;s interesting to look at each of these to see how they implement the logic and learn about it before starting to make changes.</p>
+<h2 id="improve-the-player">Improve the player</h2>
+<h3 id="python">Python</h3>
+<p>You can view the code that does this by 
+opening the <code>players/random.py</code> file. The code will be something like:</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Random</span><span class="hljs-params">(StdOutPlayer)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        super().__init__()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_my_move</span><span class="hljs-params">(self)</span> -&gt; Tuple[MainBoardCoords, SubBoardCoords]:</span>
+        main_board_coords = self.pick_next_main_board_coords()
+        sub_board = self.main_board.get_sub_board(main_board_coords)
+        sub_board_coords = self.pick_random_sub_board_coords(sub_board)
+        <span class="hljs-keyword">return</span> main_board_coords, sub_board_coords
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pick_next_main_board_coords</span><span class="hljs-params">(self)</span> -&gt; MainBoardCoords:</span>
+        <span class="hljs-keyword">if</span> self.main_board.sub_board_next_player_must_play <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            <span class="hljs-keyword">return</span> random.choice(self.main_board.get_playable_coords)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> self.main_board.sub_board_next_player_must_play
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pick_random_sub_board_coords</span><span class="hljs-params">(sub_board: SubBoard)</span> -&gt; SubBoardCoords:</span>
+        <span class="hljs-keyword">return</span> random.choice(sub_board.get_playable_coords())
+</code></pre>
+<p>As you can see, the <code>get_my_move</code> method is the one you need to edit, it returns a tuple of <code>MainBoardCoords</code> and 
+<code>SubBoardCoords</code> (which are essentially the same thing, they contain a <code>row</code> and a <code>column</code>).</p>
+<p>To keep things simple, start off with editing the <code>players/random.py</code> file.</p>
+<h5 id="other-players">Other players</h5>
+<p>There are two other players included in the code: FirstAvailable and Defensive. You can pass their names as a command line parameter to <code>run_player.py</code> to use them. For example:
+<code>uabc -p -f &quot;python3 run_player.py Defensive&quot;</code>.</p>
+<p>The Defensive player has code to check for winnable positions, which you might find useful when implementing your own player.</p>
+<p>The relevant functions are:</p>
+<ul>
+<li><code>get_my_move</code>: first it tries to find a winning or defensive position in all the boards that are legal to play, if there is none, it works like FirstAvailable (this logic is similar to Random but it picks the first item from the list of valid sub-boards and positions instead of using <code>random.choice</code>.</li>
+<li><code>get_move_for_board</code>: finds winning and defensive moves in a single sub-board.</li>
+<li><code>get_closeable_positions</code>: finds winning moves for a specified player. get_move_for_board uses this for itself and the enemy to find winning and defensive moves respectively. The function works by checking for winning moves in the three rows, the three columns and the two diagonals, then filtering out those that have no winning move.</li>
+<li><code>_column</code>, <code>_columns</code>, <code>_major_diagonal</code>, <code>_minor_diagonal</code>: these return a single column, all the columns, and the two diagonals from a sub-board. get_closeable_positions uses these as helper functions.</li>
+<li><code>get_winning_position</code>: finds a winning position on a single line. If the specified player has one less fields filled in than the length of the line, the remaining field is the winning move as long as it is empty. In any other case there is no winning move.</li>
+</ul>
+<h4 id="game-engine">Game Engine</h4>
+<p>There is a game engine provided that keeps track of the state of the game and does a lot of the heavy lifting
+for you. This can be accessed through the <code>self.main_board</code> object, and you can consult
+the <a href="https://ultimate-ttt-py.readthedocs.io/en/latest/" target="_blank">API Reference</a> for all the available methods </p>
+<h4 id="sources">Sources</h4>
+<p>Some folks prefer to view the source of the game engine directly rather than using the API reference. You can
+find all the sources in the <code>engine/</code> directory.</p>
+<h2 id="continue-analyse-your-games">Continue: <a href="analyse-games.html">Analyse Your Games</a></h2>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h4 id="cant-find-the-project">Can&apos;t find the project!</h4>
+<p>After running <code>git clone</code> without errors you should have the project in the folder the terminal is in. To find out where this is type <code>pwd</code> (or <code>echo %cd%</code> on Windows).</p>
+<blockquote>
+<p>We have prepared <a href="ideas.html">some ideas</a> on how to write the AI for your player that may help you out!</p>
+</blockquote>
+<h2 id="continue-running-locally">Continue: <a href="analyse-games.html">Running Locally</a></h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tic-tac-toe.html" class="navigation navigation-prev " aria-label="Previous page: Tic-Tac-Toe">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="analyse-games.html" class="navigation navigation-next " aria-label="Next page: Analyse Games">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"showToc":true,"title":"Ultimate Tic-Tac-Toe","level":"1.2.2","depth":2,"next":{"title":"Analyse Games","level":"1.2.2.1","depth":3,"path":"sections/participate/analyse-games.md","ref":"sections/participate/analyse-games.md","articles":[]},"previous":{"title":"Tic-Tac-Toe","level":"1.2.1","depth":2,"path":"sections/participate/tic-tac-toe.md","ref":"sections/participate/tic-tac-toe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/participate/analyse-games.html#fig1.2.2.1.1","level":"1.2.2.1","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":5,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.2.2.1.1"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":6,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/participate/ultimate-tic-tac-toe.md","mtime":"2021-12-24T02:39:58.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-24T02:40:39.154Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
