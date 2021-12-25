@@ -14,7 +14,7 @@
 * [Develop/Contribute](sections/contribute/README.md)
   * [Architecture](sections/contribute/architecture.md)
   * [Write A Game](sections/contribute/write-a-game.md)
-  * [Code of Conduct](sections/contribute/README.md)
+  * [Code of Conduct](sections/contribute/code-of-conduct.md)
 
 --------
 

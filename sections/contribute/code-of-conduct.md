@@ -10,20 +10,20 @@ This code of conduct applies to all spaces managed by the Socialgorithm project 
 
 If you believe someone is violating the code of conduct, we ask that you report it by emailing hello@socialgorithm.org. For more details please see our Reporting Guidelines in the next section.
 
-* Be friendly and patient.
-* Be welcoming. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
-* Be considerate. Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we're a world-wide community, so you might not be communicating in someone else's primary language.
-* Be respectful. Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the Django community should be respectful when dealing with other members as well as with people outside the Django community.
-* Be careful in the words that you choose. We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren't acceptable. This includes, but is not limited to:
-  * Violent threats or language directed against another person.
-  * Discriminatory jokes and language.
-  * Posting sexually explicit or violent material.
-  * Posting (or threatening to post) other people's personally identifying information ("doxing").
-  * Personal insults, especially those using racist or sexist terms.
-  * Unwelcome sexual attention.
-  * Advocating for, or encouraging, any of the above behavior.
-  * Repeated harassment of others. In general, if someone asks you to stop, then stop.
-* When we disagree, try to understand why. Disagreements, both social and technical, happen all the time and Django is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of Django comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
+- Be friendly and patient.
+- Be welcoming. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+- Be considerate. Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we're a world-wide community, so you might not be communicating in someone else's primary language.
+- Be respectful. Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the Socialgorithm community should be respectful when dealing with other members as well as with people outside the Socialgorithm community.
+- Be careful in the words that you choose. We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren't acceptable. This includes, but is not limited to:
+  - Violent threats or language directed against another person.
+  - Discriminatory jokes and language.
+  - Posting sexually explicit or violent material.
+  - Posting (or threatening to post) other people's personally identifying information ("doxing").
+  - Personal insults, especially those using racist or sexist terms.
+  - Unwelcome sexual attention.
+  - Advocating for, or encouraging, any of the above behavior.
+  - Repeated harassment of others. In general, if someone asks you to stop, then stop.
+- When we disagree, try to understand why. Disagreements, both social and technical, happen all the time and Socialgorithm is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of Socialgorithm comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 # Reporting Guide
 
@@ -35,25 +35,25 @@ If you are unsure whether the incident is a violation, or whether the space wher
 
 In your report please include:
 
-* Your contact info (so we can get in touch with you if we need to follow up)
-* Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
-* When and where the incident occurred. Please be as specific as possible.
-* Your account of what occurred. If there is a publicly available record (e.g. a mailing list archive or a public IRC logger) please include a link.
-* Any extra context you believe existed for the incident.
-* If you believe this incident is ongoing.
-* Any other information you believe we should have.
-* What happens after you file a report?
+- Your contact info (so we can get in touch with you if we need to follow up)
+- Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
+- When and where the incident occurred. Please be as specific as possible.
+- Your account of what occurred. If there is a publicly available record (e.g. a mailing list archive or a public IRC logger) please include a link.
+- Any extra context you believe existed for the incident.
+- If you believe this incident is ongoing.
+- Any other information you believe we should have.
+- What happens after you file a report?
 
 You will receive an email from the founders of Socialgorithm acknowledging receipt immediately. We promise to acknowledge receipt within 24 hours (and will aim for much quicker than that).
 
 The founders will immediately meet to review the incident and determine:
 
-* What happened.
-* Whether this event constitutes a code of conduct violation.
-* Who the bad actor was.
-* Whether this is an ongoing situation, or if there is a threat to anyone's physical safety.
-* If this is determined to be an ongoing incident or a threat to physical safety, the working groups' immediate priority will be to protect everyone involved. This means we may delay an "official" response until we believe that the situation has ended and that everyone is physically safe.
-* Whether evidence can be captured and preserved in accordance with [The digital forensics code of practice](https://www.app.college.police.uk/app-content/investigations/forensics/#digital-forensics).
+- What happened.
+- Whether this event constitutes a code of conduct violation.
+- Who the bad actor was.
+- Whether this is an ongoing situation, or if there is a threat to anyone's physical safety.
+- If this is determined to be an ongoing incident or a threat to physical safety, the working groups' immediate priority will be to protect everyone involved. This means we may delay an "official" response until we believe that the situation has ended and that everyone is physically safe.
+- Whether evidence can be captured and preserved in accordance with [The digital forensics code of practice](https://www.app.college.police.uk/app-content/investigations/forensics/#digital-forensics).
 
 Once the founders have a complete account of the events they will make a decision as to how to respond. Responses may include:
 
@@ -74,3 +74,5 @@ If your report concerns a founder, you may not feel comfortable sending your rep
 In this case, please directly reach out to one of the [founders](https://find-and-update.company-information.service.gov.uk/company/12300275/officers).
 
 If your report concerns all founders of the Socialgorithm Community Interest Company, please file a report with the authorities in accordance with [Citizens Advice guidance](https://www.citizensadvice.org.uk/law-and-courts/discrimination/taking-action-about-discrimination/taking-action-about-harassment/).
+
+Adapted from the Django Foundation code of conduct.
