@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Develop/Contribute · GitBook</title>
+        <title>Architecture · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -67,8 +67,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="architecture.html" />
+    <link rel="next" href="write-a-game.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -271,7 +273,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="./">
             
                 <a href="./">
             
@@ -285,7 +287,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="architecture.html">
+        <li class="chapter active" data-level="1.5.1" data-path="architecture.html">
             
                 <a href="architecture.html">
             
@@ -304,6 +306,19 @@
             
                     
                     Write A Game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Code of Conduct
             
                 </a>
             
@@ -366,7 +381,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Develop/Contribute</a>
+        <a href="../.." >Architecture</a>
     </h1>
 </div>
 
@@ -381,13 +396,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="developer-docs">Developer Docs</h1>
-<p>Here we will talk about the inner workings of the Socialgorithm architecture, 
-so that you can build your own games, add tournament features, and <em>even</em> fix bugs (please? :) )</p>
+                                <h1 id="architecture">Architecture</h1>
+<figure id="fig1.5.1.1"><div class="image-wrapper"><img src="architecture.png" alt="Socialgorithm Architecture"></div><figcaption>Figure: Socialgorithm Architecture</figcaption></figure>
+<p>The Socialgorithm platform is made up of:</p>
 <ul>
-<li><a href="architecture.html">Architecture</a></li>
-<li><a href="write-a-game.html">Write A Game</a></li>
+<li>Players: Code/AI written by competition participants to compete against others (e.g. a Battleships player)</li>
+<li><a href="https://play.socialgorithm.org/" target="_blank">Web UI</a>: Interface that allows competition participants/admins to view/control player matching and game options. </li>
+<li><a href="write-a-game.html">Games</a>: Servers that run games, processing moves/actions from Players, ensuring consistency and signalling game updates/end.</li>
+<li><a href="https://github.com/socialgorithm/tournament-server/" target="_blank">Tournament Server</a>: Server that communicates with multiple Game Servers to start games or read results, and rank players in a tournament leaderboard.</li>
 </ul>
+<p>All communication occurs over Websockets. </p>
+<p>Socialgorithm provides a number of libraries that abstract Websocket client/server setup and communication, so that competition players can focus on writing the best algorithms, and game writers can focus on writing fun games.</p>
 
                                 
                                 </section>
@@ -415,8 +434,12 @@ so that you can build your own games, add tournament features, and <em>even</em>
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Develop/Contribute">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="architecture.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Architecture">
+                
+                <a href="write-a-game.html" class="navigation navigation-next " aria-label="Next page: Write A Game">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -427,7 +450,7 @@ so that you can build your own games, add tournament features, and <em>even</em>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Develop/Contribute","level":"1.5","depth":1,"next":{"title":"Architecture","level":"1.5.1","depth":2,"path":"sections/develop/architecture.md","ref":"sections/develop/architecture.md","articles":[]},"previous":{"title":"Physical Setup","level":"1.4.2","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/participate/analyse-games.html#fig1.2.2.1.1","level":"1.2.2.1","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":5,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.2.2.1.1"},{"backlink":"sections/develop/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":6,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/develop/README.md","mtime":"2021-12-24T02:39:58.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-24T02:40:39.154Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.5.1","depth":2,"next":{"title":"Write A Game","level":"1.5.2","depth":2,"path":"sections/contribute/write-a-game.md","ref":"sections/contribute/write-a-game.md","articles":[]},"previous":{"title":"Develop/Contribute","level":"1.5","depth":1,"path":"sections/contribute/README.md","ref":"sections/contribute/README.md","articles":[{"title":"Architecture","level":"1.5.1","depth":2,"path":"sections/contribute/architecture.md","ref":"sections/contribute/architecture.md","articles":[]},{"title":"Write A Game","level":"1.5.2","depth":2,"path":"sections/contribute/write-a-game.md","ref":"sections/contribute/write-a-game.md","articles":[]},{"title":"Code of Conduct","level":"1.5.3","depth":2,"path":"sections/contribute/README.md","ref":"sections/contribute/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing","edit-link","page-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-wrapper":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/socialgorithm/docs/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/participate/tic-tac-toe.html#fig1.2.1.1","level":"1.2.1","list_caption":"Figure: Tic Tac Toe Animation","alt":"Tic Tac Toe Animation","nro":1,"url":"./tic-tac-toe.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Tic Tac Toe Animation","attributes":{},"skip":false,"key":"1.2.1.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":2,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.2","level":"1.2.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":3,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2.2"},{"backlink":"sections/participate/ultimate-tic-tac-toe.html#fig1.2.2.3","level":"1.2.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":4,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.2.3"},{"backlink":"sections/participate/analyse-games.html#fig1.2.2.1.1","level":"1.2.2.1","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":5,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.2.2.1.1"},{"backlink":"sections/contribute/architecture.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Socialgorithm Architecture","alt":"Socialgorithm Architecture","nro":6,"url":"architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Socialgorithm Architecture","attributes":{},"skip":false,"key":"1.5.1.1"}]},"language":"en","gitbook":"*","description":"Explains how to run Socialgorithm competitions or write games for it."},"file":{"path":"sections/contribute/architecture.md","mtime":"2021-12-25T21:08:17.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-25T21:08:59.428Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
