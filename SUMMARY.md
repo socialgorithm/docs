@@ -11,9 +11,10 @@
 * [Organise](sections/organise/README.md)
   * [Technical Setup](sections/organise/technical.md)
   * [Physical Setup]()
-* [Develop/Contribute](sections/develop/README.md)
-  * [Architecture](sections/develop/architecture.md)
-  * [Write A Game](sections/develop/write-a-game.md)
+* [Develop/Contribute](sections/contribute/README.md)
+  * [Architecture](sections/contribute/architecture.md)
+  * [Write A Game](sections/contribute/write-a-game.md)
+  * [Code of Conduct](sections/contribute/README.md)
 
 --------
 

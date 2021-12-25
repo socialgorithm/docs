@@ -13,4 +13,4 @@ Use the navigation on the left to reach sections of interest directly, or start 
 * [Competition/hackathon participant](sections/participate/README.md)
 * [Organiser for an event](sections/organise/README.md)
 * [Mentor on an event](sections/mentor/README.md)
-* [Developer contributing](sections/develop/README.md) to the Socialgorithm platform (e.g. writing a game)
+* [Developer contributing](sections/contribute/README.md) to the Socialgorithm platform (e.g. writing a game)
