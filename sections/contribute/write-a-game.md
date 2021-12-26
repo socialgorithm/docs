@@ -59,7 +59,7 @@ The Tournament Server helps to proxy messages between players and game servers, 
 
 To install the Tournament Server, check out its [repository and README](https://github.com/socialgorithm/tournament-server/). Follow the instructions to install it and connect it to your game server.
 
-You can then use our [Web UI](https://github.com/socialgorithm/play.socialgorithm.org) to start matches between your sample players to test that the entire game works as expected.
+You can then use our [Web UI](https://github.com/socialgorithm/tournaments.socialgorithm.org) to start matches between your sample players to test that the entire game works as expected.
 
 ## Game UI
 
@@ -67,4 +67,4 @@ While we provide a UI to display Tournaments and their statistics, each game can
 
 The format of the game statistics is left up to your game and its renderer. Your game, when connected to the Tournament Server, will emit `GAME_ENDED` messages, and optionally `GAME_UPDATED` messages. The tournament server will pass these messages on to spectators, including the Web UI, which will contain your React component for rendering the game board.
 
-So, to get started with writing the Game UI, follow the instructions on the [Web UI repository](https://github.com/socialgorithm/play.socialgorithm.org) to obtain the source code and to read on how to add your UI.
+So, to get started with writing the Game UI, follow the instructions on the [Web UI repository](https://github.com/socialgorithm/tournaments.socialgorithm.org) to obtain the source code and to read on how to add your UI.

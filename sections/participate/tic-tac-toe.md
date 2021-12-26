@@ -41,7 +41,7 @@ npm install
 Now run `uabc` to connect your player to the lobby you created earlier (replacing `YOUR_LOBBY_NAME` and `YOUR_PLAYER_NAME` with appropriate values):
 
 ```
-uabc --host "https://sg-tournament.herokuapp.com" --lobby "{YOUR_LOBBY_NAME}" --token "{YOUR_PLAYER_NAME}" -f "node run_player.js myPlayer"
+uabc --host "https://server.socialgorithm.org" --lobby "{YOUR_LOBBY_NAME}" --token "{YOUR_PLAYER_NAME}" -f "node run_player.js myPlayer"
 ```
 
 If all goes well, your player should show up in the list of available players. 
@@ -80,7 +80,7 @@ this.game = this.game.addMyMove(myMove);
 To test your improvements, run the `myPlayer` implementation (or any other player you have created), against the `random` implementation. You can connect the random implementation to your lobby by running:
 
 ```
-uabc --host "https://sg-tournament.herokuapp.com" --lobby "{YOUR_LOBBY_NAME}" --token "random" -f "node run_player.js random"
+uabc --host "https://server.socialgorithm.org" --lobby "{YOUR_LOBBY_NAME}" --token "random" -f "node run_player.js random"
 ```
 
 ## Competing

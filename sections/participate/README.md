@@ -30,9 +30,9 @@ You will first need to create a test lobby on our tournament server. You will us
 
 To create a lobby:
 
-1. Go to https://play.socialgorithm.org/
+1. Go to https://tournaments.socialgorithm.org/
 1. Click "Create/Join Tournaments"
-    * If disconnected, connect to https://sg-tournament.herokuapp.com OR whatever server your organisers specify.
+    * If disconnected, connect to https://server.socialgorithm.org OR whatever server your organisers specify.
 1. Click "Get Started"
 
 This is your lobby. You will shortly use the command in the "Connect Your Player" section to test your player.
