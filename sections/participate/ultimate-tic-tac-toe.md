@@ -91,7 +91,7 @@ cd ultimate-ttt-py
 The starter project comes with a player that plays moves at random. You can ensure everything works as it
 should by running this player against the `uabc` random player:
 
-# JavaScript
+### JavaScript
 
 Inside the `src` folder you'll find three implementations:
 
@@ -101,7 +101,7 @@ Inside the `src` folder you'll find three implementations:
 
 `@socialgorithm/uabc@latest -p -f "python3 run_player.py"`
 
-# Python
+### Python
 
 The `player.js` file does the stdin/stdout work, and you shouldn't edit it. It requires the file `src/defensive/logic.js`, which is the one you could start with.
 
