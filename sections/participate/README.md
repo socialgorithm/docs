@@ -8,7 +8,7 @@ You will shortly start your workshop, but we need to make sure you're prepared.
 
 **Please read everything carefully!**
 
-> Socialgorithm is a community of software developers that want to keep coding fun by designing workshops, competitions and challenges for students and companies. If this sounds interesting to you, [join us](https://socialgorithm.org/team/)!
+> Socialgorithm is a [community of software developers](https://github.com/orgs/socialgorithm/people) that want to keep coding fun by designing workshops, competitions and challenges for students and companies. If this sounds interesting to you, visit [our website](https://socialgorithm.org), or better yet, say hi in our [Slack community](https://socialgorithm.slack.com/) (you may need to [sign up](https://socialgorithm-slack.herokuapp.com/)).
 
 These are the minimum requirements to participate in your workshop:
 
